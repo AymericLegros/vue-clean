@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import BlankLayout from '../layouts/BlankLayout.vue'
-import AdminLayout from '../layouts/AdminLayout.vue'
+import AdminLayout from '../layouts/Admin/AdminLayout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/admin',
       component: AdminLayout,
       children: [
         {
@@ -30,13 +30,16 @@ const router = createRouter({
       ]
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      path: '/',
+      component: BlankLayout,
+      children: [
+        {
+          path: 'login',
+          name: 'login',
+          component: () => import('../views/Login/LoginView.vue')
+        }
+      ]
+    },
   ]
 })
 
