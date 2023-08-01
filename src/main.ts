@@ -7,6 +7,7 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import apolloClient from './apollo'
+import { registerComponents } from './registerComponents'
 
 const app = createApp({
     setup() {
@@ -17,5 +18,6 @@ const app = createApp({
 
 app.use(createPinia())
 app.use(router)
+registerComponents(app)
 
 app.mount('#app')
