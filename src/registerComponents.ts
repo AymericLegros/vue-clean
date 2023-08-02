@@ -1,5 +1,7 @@
 import type { App } from "vue";
 
-export const registerComponents = (app: App) => {
+import DropdownUserComponent from "./components/DropdownUserComponent.vue";
 
+export const registerComponents = (app: App) => {
+    app.component("DropdownUser", DropdownUserComponent);
 }
