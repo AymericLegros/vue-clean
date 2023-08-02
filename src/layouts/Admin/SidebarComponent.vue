@@ -19,9 +19,9 @@
             </div>
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="#" class="flex items-center justify-center sm:justify-normal w-14 sm:w-full h-14 text-white rounded-md bg-black hover:bg-gray-600 group">
-                        <ChartPieIcon class="h-8 w-8 text-white hover:text-gray-100 sm:ml-3" aria-hidden="true" />
-                        <span class="ml-3 hidden sm:inline text-white">Dashboard</span>
+                    <a href="#" class="flex items-center justify-center sm:justify-normal w-14 sm:w-full h-14 text-white rounded-md bg-black hover:bg-gray-600 shadow group">
+                        <UserCircleIcon class="h-8 w-8 text-white hover:text-gray-100 sm:ml-3" aria-hidden="true" />
+                        <span class="ml-3 hidden sm:inline text-white">Stagiaires</span>
                     </a>
                 </li>
             </ul>
@@ -30,5 +30,5 @@
 </template>
 
 <script setup lang="ts">
-import { ChartPieIcon } from '@heroicons/vue/20/solid'
+import { UserCircleIcon } from '@heroicons/vue/20/solid'
 </script>
