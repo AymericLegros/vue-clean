@@ -1,5 +1,5 @@
 <template>
-    <div class="w-56 text-right">
+    <div class="text-right">
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
